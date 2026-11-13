@@ -8,7 +8,7 @@ const sections = [
 
 const features = [
   "Carte interactive de la surface de Mars",
-  "Simulation de Ilann et Jojo en pls",
+  "Simulation d'un trajet Terre – Mars",
   "Données réelles des rovers de la NASA",
   "Mode exploration à 360°",
 ];
@@ -28,12 +28,15 @@ export default function App() {
 
       <main>
         <section id="home" className="hero">
-          <h1 className="stars">Mars</h1>
-          <p>Voyagez jusqu'à la planète rouge, depuis votre navigateur.</p>
+          <div className="hero-text">
+            <h1>Mars</h1>
+            <p>Voyagez jusqu'à la planète rouge, depuis votre navigateur.</p>
+          </div>
+          <div className="planet" role="img" aria-label="La planète Mars" />
         </section>
 
         <section id="experience">
-          <h2 className="stars">Experience</h2>
+          <h2>Experience</h2>
           <p>
             Posez le pied sur un sol rouillé, sous un ciel couleur de sable.
             Explorez les plaines, les canyons et les volcans de Mars comme si
@@ -42,21 +45,15 @@ export default function App() {
         </section>
 
         <section id="video">
-          <h2 className="stars">Demonstration Video</h2>
+          <h2>Demonstration Video</h2>
           <div className="video">
-            {/* Remplacez ce bloc par votre vidéo :
-            <iframe
-              src="https://www.youtube.com/embed/VOTRE_ID"
-              title="Vidéo de démonstration"
-              allowFullScreen
-            /> */}
             <span>Votre vidéo ici</span>
           </div>
         </section>
 
         <section id="features">
-          <h2 className="stars">Features</h2>
-          <ul>
+          <h2>Features</h2>
+          <ul className="feature-list">
             {features.map((f) => (
               <li key={f}>{f}</li>
             ))}
@@ -64,9 +61,9 @@ export default function App() {
         </section>
 
         <section id="author">
-          <h2 className="stars">Author</h2>
+          <h2>Author</h2>
           <p>
-            Créé par [Votre nom], passionné d'espace et de exploration
+            Créé par [Votre nom], passionné d'espace et d'exploration
             martienne.
           </p>
         </section>
