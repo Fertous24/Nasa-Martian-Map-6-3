@@ -1,13 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Voyagez jusqu'à Mars, depuis votre navigateur." />
-    <title>Mars</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploration Mars</title>
+    <style>
+        /* Défilement fluide quand on clique sur un lien du menu */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fond martien rouge-marron et police de base */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #4a1810 0%, #8c2d19 50%, #3b120b 100%);
+            color: #f4e8e1; /* Texte clair pour bien lire sur le fond sombre */
+        }
+
+        /* --- LA BARRE DE NAVIGATION (BANDEAU DU HAUT) --- */
+        nav {
+            position: fixed; /* Reste collée en haut même quand on défile */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1f0805; /* Marron très foncé presque noir */
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000; /* Force la barre à rester AU-DESSUS de tout le reste */
+            border-bottom: 2px solid #c94a2e;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff7b59; /* Change de couleur au survol de la souris */
+        }
+
+        /* --- STYLE DES TITRES (NOIR AVEC DES ÉTOILES BLANCHES) --- */
+        h1, h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 10px;
+            
+            /* Fond étoilé créé uniquement en CSS */
+            background-color: #050505;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 4px);
+            background-size: 150px 150px, 100px 100px, 80px 80px;
+            background-position: 0 0, 40px 60px, 130px 270px;
+            
+            /* Bordure et contour pour faire ressortir le titre */
+            color: #ffffff; /* Texte blanc pour contraster avec le fond noir étoilé */
+            border: 2px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Si tu veux l'effet "lettres remplies d'étoiles" plutôt qu'un bloc noir, 
+           remplace le bloc h1, h2 ci-dessus par celui en commentaire juste en bas */
+
+        /* --- LES SECTIONS (UNE PAGE UNIQUE) --- */
+        section {
+            min-height: 100vh; /* Chaque section prend au moins 100% de la hauteur de l'écran */
+            padding: 100px 15% 40px 15%; /* 100px en haut pour ne pas être caché par la navbar */
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+
+        /* Cadre pour la vidéo de démonstration */
+        .video-box {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            background-color: #000;
+            border: 3px solid #c94a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BANDEAU DE NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#video">Demonstration Video</a>
+        <a href="#features">Features</a>
+        <a href="#author">Author</a>
+    </nav>
+
+    <!-- SECTION 1 : HOME -->
+    <section id="home">
+        <h1>Mission Mars 2026</h1>
+        <p>Bienvenue sur le portail dédié à l'exploration de la planète rouge. Découvrez les secrets du système solaire et les défis de la colonisation spatiale.</p>
+    </section>
+
+    <!-- SECTION 2 : EXPERIENCE -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Plongez dans la gravité martienne (38% de celle de la Terre) et explorez les vastes plaines d'Olympus Mons et de Valles Marineris comme si vous y étiez.</p>
+    </section>
+
+    <!-- SECTION 3 : DEMONSTRATION VIDEO -->
+    <section id="video">
+        <h2>Demonstration Video</h2>
+        <p>Aperçu de la simulation d'atterrissage et du déploiement des rovers sur le sol martien :</p>
+        <div class="video-box">
+            <!-- Tu pourras remplacer ce texte par une balise <video> ou un lien YouTube <iframe> -->
+            <p>[ Espace réservé pour ta vidéo ]</p>
+        </div>
+    </section>
+
+    <!-- SECTION 4 : FEATURES -->
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><p><strong>Cartographie 3D :</strong> Reliefs réels basés sur les données de la NASA.</p></li>
+            <li><p><strong>Météo en direct :</strong> Simulation des tempêtes de poussière et des températures (-60°C).</p></li>
+            <li><p><strong>Mode Rover :</strong> Contrôle interactif des véhicules d'exploration.</p></li>
+        </ul>
+    </section>
+
+    <!-- SECTION 5 : AUTHOR -->
+    <section id="author">
+        <h2>Author</h2>
+        <p>Projet conçu et développé avec passion pour l'astronomie et le développement web.</p>
+    </section>
+
+</body>
 </html>
