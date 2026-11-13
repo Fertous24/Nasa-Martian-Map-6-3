@@ -8,7 +8,7 @@ const sections = [
 
 const features = [
   "Carte interactive de la surface de Mars",
-  "Simulation d'un trajet Terre – Mars",
+  "Simulation de Ilann et Jojo en pls",
   "Données réelles des rovers de la NASA",
   "Mode exploration à 360°",
 ];
