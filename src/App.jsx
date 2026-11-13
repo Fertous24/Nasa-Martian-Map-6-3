@@ -42,7 +42,6 @@ export default function App() {
             disable-zoom
             shadow-intensity="1"
             exposure="1.1"
-            camera-orbit="auto auto 1.8m"
             className="planet-3d"
           ></model-viewer>
         </section>
