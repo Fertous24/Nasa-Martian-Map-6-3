@@ -32,9 +32,19 @@ export default function App() {
             <h1>Mars</h1>
             <p>Voyagez jusqu'à la planète rouge, depuis votre navigateur.</p>
           </div>
-          <div className="planet" role="img" aria-label="La planète Mars" />
+        
+          <model-viewer
+            src="/mars.glb"
+            alt="Modèle 3D de la planète Mars"
+            auto-rotate
+            rotation-per-second="15deg"
+            camera-controls
+            disable-zoom
+            shadow-intensity="1"
+            exposure="1.1"
+            className="planet-3d"
+          ></model-viewer>
         </section>
-
         <section id="experience">
           <h2>Experience</h2>
           <p>
