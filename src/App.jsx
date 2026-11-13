@@ -1,16 +1,16 @@
 const sections = [
   { id: "home", label: "Home" },
   { id: "experience", label: "Experience" },
-  { id: "video", label: "Demonstration Video" },
+  { id: "video", label: "Video Demonstration" },
   { id: "features", label: "Features" },
-  { id: "author", label: "Author" },
+  { id: "author", label: "Authors" },
 ];
 
 const features = [
-  "Carte interactive de la surface de Mars",
-  "Simulation d'un trajet Terre – Mars",
-  "Données réelles des rovers de la NASA",
-  "Mode exploration à 360°",
+  "An interactive map of the surface of Mars",
+  "Simulation of Ilann and Jojo failing (impossible)",
+  "The localisation of the Earth in the Mars sky.",
+  "Exploration at 360°",
 ];
 
 export default function App() {
@@ -63,7 +63,7 @@ export default function App() {
         <section id="author">
           <h2>Author</h2>
           <p>
-            Créé par [Votre nom], passionné d'espace et d'exploration
+            Créé par les GOAT, passionné d'espace et d'exploration (et pour l'argent)
             martienne.
           </p>
         </section>
