@@ -126,7 +126,7 @@ main p {
 /* La planète */
 /* La planète 3D */
 .planet-3d {
-  width: clamp(32rem, 50vw, 64rem);
+  width: clamp(60rem, 80vw, 80rem);
   aspect-ratio: 1;
   justify-self: center;
   background-color: transparent;
