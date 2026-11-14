@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import L from "leaflet";
-import "leaflet/dist/leaflet.css"; // Indispensable pour que la carte ne s'affiche pas cassée
+import "leaflet/dist/leaflet.css";
 
 const sections = [
   { id: "home", label: "Home" },
@@ -18,20 +19,19 @@ const features = [
 ];
 
 export default function App() {
-  // 1. On crée une référence pour cibler la div de la carte
   const mapRef = useRef(null);
 
-  // 2. On initialise Leaflet une seule fois quand la page charge
   useEffect(() => {
-    // Sécurité pour éviter de créer la carte deux fois en mode dev React
-    if (mapRef.current && !mapRef.current._leaflet_id) {
-      const map = L.map(mapRef.current).setView([0, 0], 2);
+    if (!mapRef.current) return;
 
-      // Fond de carte de base (tu le remplaceras par tes tuiles de Mars plus tard)
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap",
-      }).addTo(map);
-    }
+    const map = L.map(mapRef.current).setView([0, 0], 2);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap",
+    }).addTo(map);
+
+    // Nettoyage : indispensable quand on change de page puis qu'on revient
+    return () => map.remove();
   }, []);
 
   return (
@@ -72,11 +72,13 @@ export default function App() {
             vous y étiez.
           </p>
 
-          {/* 3. L'EMPLACEMENT DE TA CARTE (la hauteur est obligatoire !) */}
-          <div
-            ref={mapRef}
-            style={{ height: "400px", width: "100%", marginTop: "20px", borderRadius: "12px" }}
-          ></div>
+          <div ref={mapRef} className="map"></div>
+
+          <p className="map-text">[PARAGRAPHE A INSERER]</p>
+
+          <Link to="/exploration-simulation" className="btn">
+            Exploration simulation
+          </Link>
         </section>
 
         <section id="video">
@@ -98,8 +100,8 @@ export default function App() {
         <section id="author">
           <h2>Author</h2>
           <p>
-            Créé par les GOAT, passionné d'espace et d'exploration (et pour l'argent)
-            martienne.
+            Créé par les GOAT, passionné d'espace et d'exploration (et pour
+            l'argent) martienne.
           </p>
         </section>
       </main>
