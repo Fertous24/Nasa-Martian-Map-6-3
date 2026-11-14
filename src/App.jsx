@@ -43,7 +43,7 @@ export default function App() {
             camera-orbit="auto auto 1.4m"
             shadow-intensity="1"
             exposure="1.1"
-            className="planet-3d"
+            class="planet-3d"
           ></model-viewer>
         </section>
         <section id="experience">
