@@ -100,7 +100,7 @@ h2 {
 }
 
 .logo img {
-  height: 100%;   /* ajuste la taille du logo ici */
+  height: 4rem;   /* ajuste la taille du logo ici */
   width: auto;
   display: block;
 }
