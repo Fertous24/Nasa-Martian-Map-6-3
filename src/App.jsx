@@ -29,15 +29,7 @@ export default function App() {
 
   return (
     <>
-      <header className="navbar">
-        <nav>
-          {sections.map((s) => (
-            <a key={s.id} href={`#${s.id}`}>
-              {s.label}
-            </a>
-          ))}
-        </nav>
-      </header>
+      <Navbar />
 
       <main>
         <section id="home" className="hero">
