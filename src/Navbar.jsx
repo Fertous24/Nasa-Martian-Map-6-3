@@ -13,7 +13,8 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <Link to="/" className="logo" aria-label="Accueil">
-          <img src="/logo.png" alt="Logo Mars" />
+        <img src="/logo.png" alt="Logo Mars" />
+        <span className="logo-text">Team 5/3</span>
         </Link>
 
         <nav>

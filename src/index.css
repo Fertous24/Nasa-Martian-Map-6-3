@@ -81,10 +81,26 @@ h2 {
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.75rem;              /* espace entre le logo et le texte */
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: "Unbounded", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  white-space: nowrap;       /* empêche "Team 5/3" de passer sur deux lignes */
+}
+
+.logo:hover .logo-text,
+.logo:focus-visible .logo-text {
+  color: var(--accent);
 }
 
 .logo img {
-  height: 2.5rem;   /* ajuste la taille du logo ici */
+  height: 100%;   /* ajuste la taille du logo ici */
   width: auto;
   display: block;
 }
