@@ -105,8 +105,6 @@ export default function App() {
           </p>
         </section>
       </main>
-
-      <footer>© {new Date().getFullYear()} Mars</footer>
     </>
   );
 }
