@@ -105,7 +105,7 @@ main p {
 
 /* Hero */
 .hero {
-  max-width: none;          /* laisse le hero prendre toute la largeur */
+  max-width: none;         
   padding-right: 0;
   min-height: 85vh;
   display: grid;
@@ -118,6 +118,10 @@ main p {
   .hero {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.hero-text {
+  padding-left: 6rem;
 }
 
 .planet-3d {
