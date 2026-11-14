@@ -27,8 +27,6 @@ export default function ExplorationSimulation() {
           </Link>
         </section>
       </main>
-
-      <footer>© {new Date().getFullYear()} Mars</footer>
     </>
   );
 }
