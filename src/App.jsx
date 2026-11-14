@@ -39,7 +39,6 @@ export default function App() {
             auto-rotate
             rotation-per-second="15deg"
             interaction-prompt="none"
-            camera-orbit="auto auto 2m"
             shadow-intensity="1"
             exposure="1.1"
             class="planet-3d"
