@@ -177,3 +177,64 @@ footer {
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
+
+/* Carte */
+.map {
+  height: 400px;
+  width: 100%;
+  margin-top: 1.25rem;
+  border-radius: 12px;
+}
+
+.map-text {
+  margin-top: 1.5rem;
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.85rem 1.75rem;
+  background: var(--accent);
+  color: var(--night);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+  background: transparent;
+  color: var(--accent);
+  outline: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background: var(--accent);
+  color: var(--night);
+}
+
+/* Page Exploration simulation */
+.page-title {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+.simulation {
+  min-height: 60vh;
+  margin: 2rem 0;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
