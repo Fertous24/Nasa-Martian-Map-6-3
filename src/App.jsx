@@ -38,9 +38,8 @@ export default function App() {
             alt="Modèle 3D de la planète Mars"
             auto-rotate
             rotation-per-second="15deg"
-            camera-controls
-            disable-zoom
-            camera-orbit="auto auto 1.8m"
+            interaction-prompt="none"
+            camera-orbit="auto auto 2m"
             shadow-intensity="1"
             exposure="1.1"
             class="planet-3d"
