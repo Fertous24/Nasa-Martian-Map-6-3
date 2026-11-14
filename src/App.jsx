@@ -40,6 +40,7 @@ export default function App() {
             rotation-per-second="15deg"
             camera-controls
             disable-zoom
+            camera-orbit="auto auto 1.4m"
             shadow-intensity="1"
             exposure="1.1"
             className="planet-3d"
