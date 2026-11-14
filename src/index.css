@@ -171,12 +171,6 @@ model-viewer {
   border-top: 1px solid var(--line);
 }
 
-footer {
-  padding: 2rem 1.5rem;
-  text-align: center;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-}
 
 /* Carte */
 .map {
