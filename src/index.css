@@ -127,7 +127,9 @@ main p {
   background-color: transparent;
   outline: none;
   --poster-color: transparent;
-  filter: drop-shadow(0 0 3.5rem rgba(240, 140, 90, 0.25));
+}
+model-viewer {
+  transform: translateX(4rem); /* ajuste : 2rem, 6rem, 10rem... */
 }
 
 /* Vidéo */
