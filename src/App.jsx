@@ -2,14 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-
-const sections = [
-  { id: "home", label: "Home" },
-  { id: "experience", label: "Experience" },
-  { id: "video", label: "Video Demonstration" },
-  { id: "features", label: "Features" },
-  { id: "author", label: "Authors" },
-];
+import Navbar from "./Navbar.jsx";
 
 const features = [
   "An interactive map of the surface of Mars",
