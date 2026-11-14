@@ -105,7 +105,8 @@ main p {
 
 /* Hero */
 .hero {
-  max-width: 72rem;
+  max-width: none;          /* laisse le hero prendre toute la largeur */
+  padding-right: 0;
   min-height: 85vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -115,24 +116,18 @@ main p {
 
 @media (min-width: 52rem) {
   .hero {
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.hero-text p {
-  font-size: 1.25rem;
-}
-
-/* La planète */
-/* La planète 3D */
 .planet-3d {
-  width: clamp(18rem, 35vw, 32rem);
-  height: clamp(18rem, 35vw, 32rem);
-  aspect-ratio: 1;
-  justify-self: center;
+  width: 100%;
+  height: 80vh;             /* grande boîte : c'est elle qui donne la place à la planète */
+  min-height: 30rem;
   background-color: transparent;
-  filter: drop-shadow(0 0 3.5rem rgba(240, 140, 90, 0.25));
   outline: none;
+  --poster-color: transparent;
+  filter: drop-shadow(0 0 3.5rem rgba(240, 140, 90, 0.25));
 }
 
 /* Vidéo */
