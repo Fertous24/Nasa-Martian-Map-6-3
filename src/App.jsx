@@ -1,3 +1,7 @@
+import { useEffect, useRef } from "react";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css"; // Indispensable pour que la carte ne s'affiche pas cassée
+
 const sections = [
   { id: "home", label: "Home" },
   { id: "experience", label: "Experience" },
@@ -14,6 +18,22 @@ const features = [
 ];
 
 export default function App() {
+  // 1. On crée une référence pour cibler la div de la carte
+  const mapRef = useRef(null);
+
+  // 2. On initialise Leaflet une seule fois quand la page charge
+  useEffect(() => {
+    // Sécurité pour éviter de créer la carte deux fois en mode dev React
+    if (mapRef.current && !mapRef.current._leaflet_id) {
+      const map = L.map(mapRef.current).setView([0, 0], 2);
+
+      // Fond de carte de base (tu le remplaceras par tes tuiles de Mars plus tard)
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap",
+      }).addTo(map);
+    }
+  }, []);
+
   return (
     <>
       <header className="navbar">
@@ -32,7 +52,7 @@ export default function App() {
             <h1>Mars</h1>
             <p>Voyagez jusqu'à la planète rouge, depuis votre navigateur.</p>
           </div>
-        
+
           <model-viewer
             src="/mars.glb"
             alt="Modèle 3D de la planète Mars"
@@ -43,6 +63,7 @@ export default function App() {
             class="planet-3d"
           ></model-viewer>
         </section>
+
         <section id="experience">
           <h2>Experience</h2>
           <p>
@@ -50,6 +71,12 @@ export default function App() {
             Explorez les plaines, les canyons et les volcans de Mars comme si
             vous y étiez.
           </p>
+
+          {/* 3. L'EMPLACEMENT DE TA CARTE (la hauteur est obligatoire !) */}
+          <div
+            ref={mapRef}
+            style={{ height: "400px", width: "100%", marginTop: "20px", borderRadius: "12px" }}
+          ></div>
         </section>
 
         <section id="video">
