@@ -20,8 +20,9 @@ export default function App() {
           <div className="hero-text">
             <h1>Let's visit Mars !</h1>
             <p>
-              This is our submission for the Nasa Challenge : "Interplanetary Survival Guide: Martian Map"
-              
+              This is our submission for the Nasa Challenge : "Interplanetary Survival Guide: Martian Map". 
+            </p>
+            </p>              
               Let's explore our solution to a safety and efficiency
               problem. If an astronaut lands on Mars and needs to
               travel on foot, how can they safely reach a destination
