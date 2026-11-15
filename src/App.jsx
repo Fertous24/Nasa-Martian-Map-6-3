@@ -56,7 +56,7 @@ export default function App() {
         </section>
 
         <section id="experience">
-        <h2>Solution</h2>
+        <h2>Try our 3D experience on Mars.</h2>
       
         <p>
           Our proposed solution is to allow astronauts to choose
