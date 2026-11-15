@@ -73,7 +73,7 @@ export default function App() {
 
           <div className="eva-wrapper">
             <iframe
-              src="/eva/index.html"
+              src="Public/index.html"
               title="Jezero EVA Navigator"
               className="eva-frame"
               loading="lazy"
