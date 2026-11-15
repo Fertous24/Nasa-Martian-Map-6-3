@@ -153,7 +153,7 @@ export default function App() {
               <strong>Ilann Diallo Bogreau</strong> – Developed the map and the app using JavaScript.
             </li>
             <li>
-              <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content. Created and edited the demonstration video.
+              <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content. Integrated and connected everyone's work.
             </li>
             <li>
               <strong>Marco BLANC</strong> – Made the team icon with AI and watch a soccer match !
