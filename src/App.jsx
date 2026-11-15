@@ -140,7 +140,7 @@ export default function App() {
               <strong>Joachim SERVANT</strong> –
             </li>
             <li>
-              <strong>Gabriel GUIMBAR</strong> –
+              <strong>Gabriel GUIMBARD-VILLA</strong> –
             </li>
           </ul>
         </section>
