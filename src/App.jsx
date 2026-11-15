@@ -140,8 +140,9 @@ export default function App() {
             >
               Télécharger le PDF
             </a>
+          </div>
             
-            <div className="doc-card">
+          <div className="doc-card">
             <div className="doc-icon" aria-hidden="true">📄</div>
             <div className="doc-info">
               <strong>Used data</strong>
@@ -155,8 +156,7 @@ export default function App() {
               Télécharger le PDF
             </a>
           </div>
-          </div>
-        </section>
+      </section>
 
 
         {/* AUTHOR SECTION */}
