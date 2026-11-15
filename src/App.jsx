@@ -106,7 +106,7 @@ export default function App() {
       
         {" "}
 
-            <h1>Try our 3D experience on Mars.<\h1>
+        <h1>Try our 3D experience on Mars.<\h1>
       
 
         <Link
@@ -117,7 +117,7 @@ export default function App() {
         </Link>
          <p>
             N.B : Please click on the "mission" button in the top left to start the experience. You can only click once, refresh the page to visit another site.
-          </p>
+         </p>
       </section>
 
 
