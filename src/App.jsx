@@ -140,6 +140,21 @@ export default function App() {
             >
               Télécharger le PDF
             </a>
+            
+            <div className="doc-card">
+            <div className="doc-icon" aria-hidden="true">📄</div>
+            <div className="doc-info">
+              <strong>Used data</strong>
+              <span>Format PDF</span>
+            </div>
+            <a
+              href="/documentation2.pdf"
+              download="used-data-5/3-Mars.pdf"
+              className="btn"
+            >
+              Télécharger le PDF
+            </a>
+          </div>
           </div>
         </section>
 
