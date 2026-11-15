@@ -22,7 +22,7 @@ export default function App() {
             <p>
               This is our submission for the Nasa Challenge : "Interplanetary Survival Guide: Martian Map". 
             </p>
-            </p>              
+            <p>              
               Let's explore our solution to a safety and efficiency
               problem. If an astronaut lands on Mars and needs to
               travel on foot, how can they safely reach a destination
