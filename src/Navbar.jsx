@@ -6,7 +6,7 @@ export default function Navbar() {
     { id: 'experience', label: 'Experience' },
     { id: 'video', label: 'Demonstration video' },
     { id: 'documentation', label: 'Documentation' },
-    { id: 'authors', label: 'Authors' }
+    { id: 'author', label: 'Authors' }
   ];
 
   return (
