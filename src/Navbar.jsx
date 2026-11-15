@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const sections = [
   { id: "home", label: "Home" },
   { id: "experience", label: "Experience" },
-  { id: "video", label: "Video Demonstration" },
+  { id: "video", label: "Demonstration Video" },
   { id: "author", label: "Authors" },
 ];
 
