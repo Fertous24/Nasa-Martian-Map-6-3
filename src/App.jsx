@@ -115,12 +115,12 @@ export default function App() {
           <div className="doc-card">
             <div className="doc-icon" aria-hidden="true">📄</div>
             <div className="doc-info">
-              <strong>Martian Map – Team Report</strong>
+              <strong>Martian Map – Team 5/3 documentation</strong>
               <span>Format PDF</span>
             </div>
             <a
               href="/documentation.pdf"
-              download="Martian-Map-Documentation.pdf"
+              download="documentation1.pdf"
               className="btn"
             >
               Télécharger le PDF
