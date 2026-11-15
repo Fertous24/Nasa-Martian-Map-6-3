@@ -288,3 +288,24 @@ model-viewer {
   border-radius: 12px;
   background: #07090e;
 }
+
+
+.author-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.author-list li {
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-left: 3px solid #e65c35;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.author-list strong {
+  color: #e65c35;
+}
+
