@@ -149,8 +149,7 @@ export default function App() {
           <h2>Authors</h2>
         
           <p>
-            Created by a team of passionate high school students
-            during their free weekends.
+            We are five high school students from Lycée Thiers in Marseille (hence the team name, 5/3) who are passionate about astronomy and space exploration. That is why we decided to participate in this project.
           </p>
         
           <ul className="author-list">
