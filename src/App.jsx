@@ -38,25 +38,26 @@ export default function App() {
         </section>
 
         <section id="experience">
-          <h2>Solution</h2>
-
-          <p>
-            Our proposed solution is to allow astronauts to choose
-            the safest route themselves. We envision a lightweight
-            tablet that they can carry with them at all times.
-            During an EVA (Extravehicular Activity), they can take
-            it out and check how long it would take to reach a
-            destination, whether they have enough oxygen to make
-            the return journey safely, and access many other useful
-            features that can transform an exploration mission.
-            These features are demonstrated in our video.
-          </p>
-          <p className="map-text">
-            A simulation of an astronaut's tablet interface during
-            an EVA after landing in Jezero Crater, near the
-            Perseverance rover:
-          </p>
-
+        <h2>Solution</h2>
+      
+        <p>
+          Our proposed solution is to allow astronauts to choose
+          the safest route themselves. We envision a lightweight
+          tablet that they can carry with them at all times.
+          During an EVA (Extravehicular Activity), they can take
+          it out and check how long it would take to reach a
+          destination, whether they have enough oxygen to make
+          the return journey safely, and access many other useful
+          features that can transform an exploration mission.
+          These features are demonstrated in our video.
+        </p>
+        <p className="map-text">
+          A simulation of an astronaut's tablet interface during
+          an EVA after landing in Jezero Crater, near the
+          Perseverance rover:
+        </p>
+      
+        <div className="btn-group">
           <a
             href="/index1.html"
             target="_blank"
@@ -65,27 +66,36 @@ export default function App() {
           >
             Open in full screen
           </a>
-
-          <div className="eva-wrapper">
-            <iframe
-              src="/index1.html"
-              title="Jezero EVA Navigator"
-              className="eva-frame"
-              loading="lazy"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-
-          {" "}
-
-          <Link
-            to="https://joavant.github.io/Mars_Simulation/"
-            className="btn"
+      
+          <a
+            href="https://exemple.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
           >
-            Exploration Simulation
-          </Link>
-        </section>
+            Watch the tutorial to use the interactive map
+          </a>
+        </div>
+      
+        <div className="eva-wrapper">
+          <iframe
+            src="/index1.html"
+            title="Jezero EVA Navigator"
+            className="eva-frame"
+            loading="lazy"
+            allowFullScreen
+          ></iframe>
+        </div>
+      
+        {" "}
+      
+        <Link
+          to="https://joavant.github.io/Mars_Simulation/"
+          className="btn"
+        >
+          Exploration Simulation
+        </Link>
+      </section>
 
         {/* VIDEO SECTION */}
         <section id="video">
