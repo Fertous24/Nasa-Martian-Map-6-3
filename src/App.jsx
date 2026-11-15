@@ -107,17 +107,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* FEATURES SECTION */}
-        <section id="features">
-          <h2>Features</h2>
-
-          <ul className="feature-list">
-            {features.map((feature) => (
-              <li key={feature}>{feature}</li>
-            ))}
-          </ul>
-        </section>
-
 
         {/* AUTHOR SECTION */}
         <section id="author">
