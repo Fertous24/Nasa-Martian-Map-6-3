@@ -80,7 +80,7 @@ export default function App() {
           {" "}
 
           <Link
-            to="/exploration-simulation"
+            to="https://joavant.github.io/Mars_Simulation/"
             className="btn"
           >
             Exploration Simulation
@@ -146,13 +146,13 @@ export default function App() {
               <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content. Created and edited the demonstration video.
             </li>
             <li>
-              <strong>Marco BLANC</strong> – 
+              <strong>Marco BLANC</strong> – Made the team icon with AI and watch a soccer match !
             </li>
             <li>
               <strong>Joachim SERVANT</strong> – Created the 3D experience on mars with Unity.
             </li>
             <li>
-              <strong>Gabriel GUIMBARD-VILLA</strong> – Wrote the team report.
+              <strong>Gabriel GUIMBARD-VILLA</strong> – Wrote the team report, all the documentation and helped creating the video.
             </li>
           </ul>
         </section>
