@@ -119,8 +119,8 @@ export default function App() {
               <span>Format PDF</span>
             </div>
             <a
-              href="/documentation.pdf"
-              download="documentation1.pdf"
+              href="/documentation1.pdf"
+              download="Martian-map-5/3-documentation.pdf"
               className="btn"
             >
               Télécharger le PDF
