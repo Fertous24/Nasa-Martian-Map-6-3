@@ -2,13 +2,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 
-const features = [
-  "Finding the safest path",
-  "Simulation of Ilann and Jojo failing (impossible)",
-  "Locating Earth in the Martian sky",
-  "360° exploration",
-];
-
 export default function App() {
   return (
     <>
