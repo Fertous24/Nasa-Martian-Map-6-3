@@ -3172,7 +3172,7 @@
     el.className = cls;
     label.textContent = 'RETURN: ' + ev.statusLabel;
     sub.textContent = ev.ok
-      ? `marge ${(ev.margin * 100).toFixed(0)} % · ${fmtDist(ev.distM)} · ${fmtDur(ev.etaSec)}`
+      ? `margin ${(ev.margin * 100).toFixed(0)} % · ${fmtDist(ev.distM)} · ${fmtDur(ev.etaSec)}`
       : 'return impossible';
   }
 
