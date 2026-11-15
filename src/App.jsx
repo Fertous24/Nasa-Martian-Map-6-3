@@ -106,7 +106,7 @@ export default function App() {
       
         {" "}
 
-        <h2>Try our 3D experience on Mars.<\h2>
+        <h2>Try our 3D experience on Mars.</h2>
       
 
         <Link
