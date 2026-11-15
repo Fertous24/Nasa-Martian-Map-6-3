@@ -2518,7 +2518,7 @@
           <button data-site-sel="gale">Gale</button>
         </div>
         <div class="hchip"><b id="hv-time">00:00:00</b><span>Temps EVA (sim)</span></div>
-        <div class="hchip"><b id="hv-o2">0.600 kg</b><span>O₂ restant</span></div>
+        <div class="hchip"><b id="hv-o2">0.600 kg</b><span>O₂ remaining</span></div>
         <div class="hchip"><b id="hv-en">8.48 MJ</b><span>Energy</span></div>
         <div class="hchip"><b id="hv-rad">0.00 mSv</b><span>Cumulative dose</span></div>
         <div id="jev-status" class="st-grey">
