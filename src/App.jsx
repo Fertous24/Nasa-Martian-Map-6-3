@@ -106,20 +106,18 @@ export default function App() {
       
         {" "}
 
+            <h1></h1>Try our 3d experience on Mars.<\h1>
+      
 
-          <p>
-            Try our 3d experience on Mars.
-          </p>
-
-          <p>
-            N.B : Please click on the "mission" button in the top left to start the experience. You can only click once, refresh the page to visit another site.
-          </p>
         <Link
           to="https://joavant.github.io/Mars_Simulation/"
           className="btn"
         >
           Exploration Simulation
         </Link>
+         <p>
+            N.B : Please click on the "mission" button in the top left to start the experience. You can only click once, refresh the page to visit another site.
+          </p>
       </section>
 
 
