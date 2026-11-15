@@ -37,6 +37,25 @@ export default function App() {
           ></model-viewer>
         </section>
 
+        {/* VIDEO SECTION */}
+        <section id="video">
+          <h2>Demonstration Video</h2>
+          <p>
+            This is our demonstration video, showing how to use
+            our app and exploring all of its features:
+          </p>
+
+          <div className="video">
+            <video 
+              src="/videos/pres.mp4" 
+              controls 
+              width="100%"
+            >
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+          </div>
+        </section>
+
         <section id="experience">
         <h2>Solution</h2>
       
@@ -96,25 +115,6 @@ export default function App() {
           Exploration Simulation
         </Link>
       </section>
-
-        {/* VIDEO SECTION */}
-        <section id="video">
-          <h2>Demonstration Video</h2>
-          <p>
-            This is our demonstration video, showing how to use
-            our app and exploring all of its features:
-          </p>
-
-          <div className="video">
-            <video 
-              src="/videos/pres.mp4" 
-              controls 
-              width="100%"
-            >
-              Votre navigateur ne supporte pas la lecture de vidéos.
-            </video>
-          </div>
-        </section>
 
 
         
