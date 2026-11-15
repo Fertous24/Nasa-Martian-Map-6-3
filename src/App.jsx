@@ -137,7 +137,7 @@ export default function App() {
               <strong>Marco BLANC</strong> – Created and edited the demonstration video.
             </li>
             <li>
-              <strong>Joachim SERVANT</strong> –
+              <strong>Joachim SERVANT</strong> – Created the 3D experience on mars with Unity.
             </li>
             <li>
               <strong>Gabriel GUIMBARD-VILLA</strong> –
