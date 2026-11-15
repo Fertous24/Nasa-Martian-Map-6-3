@@ -106,7 +106,13 @@ export default function App() {
           </p>
 
           <div className="video">
-            <span>Your video here</span>
+            <video 
+              src="/videos/pres.mp4" 
+              controls 
+              width="100%"
+            >
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
           </div>
         </section>
 
