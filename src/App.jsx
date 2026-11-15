@@ -101,6 +101,34 @@ export default function App() {
         </section>
 
 
+        
+        <section id="documentation">
+          <h2>Documentation</h2>
+
+          <p>
+            Retrouvez notre rapport complet : le contexte du défi,
+            notre méthodologie, les choix techniques et les résultats
+            de notre solution. Vous pouvez le télécharger au format PDF
+            pour le consulter hors ligne.
+          </p>
+
+          <div className="doc-card">
+            <div className="doc-icon" aria-hidden="true">📄</div>
+            <div className="doc-info">
+              <strong>Martian Map – Team Report</strong>
+              <span>Format PDF</span>
+            </div>
+            <a
+              href="/documentation.pdf"
+              download="Martian-Map-Documentation.pdf"
+              className="btn"
+            >
+              Télécharger le PDF
+            </a>
+          </div>
+        </section>
+
+
         {/* AUTHOR SECTION */}
         <section id="author">
           <h2>Authors</h2>
