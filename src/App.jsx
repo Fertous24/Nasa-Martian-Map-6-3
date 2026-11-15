@@ -18,15 +18,17 @@ export default function App() {
         {/* HERO SECTION */}
         <section id="home" className="hero">
           <div className="hero-text">
-            <h1>Mars Local Map</h1>
+            <h1>Let's visit Mars !</h1>
             <p>
+              This is our submission for the Nasa Challenge : "Interplanetary Survival Guide: Martian Map"
+              
               Let's explore our solution to a safety and efficiency
               problem. If an astronaut lands on Mars and needs to
               travel on foot, how can they safely reach a destination
               without having to communicate with Earth at every step?
               We know that each question takes at least 5 minutes to
               reach Earth, and the answer takes another 5 minutes
-              to arrive.
+              to arrive. It would be too long.
             </p>
           </div>
 
@@ -41,8 +43,7 @@ export default function App() {
           ></model-viewer>
         </section>
 
-        {/* EXPERIENCE SECTION */}
-        <section id="experience">
+        <section id="Solution">
           <h2>Experience</h2>
 
           <p>
