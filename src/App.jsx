@@ -85,12 +85,12 @@ export default function App() {
           </a>
       
           <a
-            href="https://exemple.com"
-            target="_blank"
+            href="/tuto.pdf"
+            download="tuto-carte-interactive.pdf"
             rel="noopener noreferrer"
             className="btn btn-outline"
           >
-            Watch the tutorial to use the interactive map
+            Download the interactive map guide (PDF)
           </a>
         </div>
       
