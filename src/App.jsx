@@ -56,6 +56,11 @@ export default function App() {
             features that can transform an exploration mission.
             These features are demonstrated in our video.
           </p>
+          <p className="map-text">
+            A simulation of an astronaut's tablet interface during
+            an EVA after landing in Jezero Crater, near the
+            Perseverance rover:
+          </p>
 
           <a
             href="/eva/index.html"
@@ -76,11 +81,6 @@ export default function App() {
             ></iframe>
           </div>
 
-          <p className="map-text">
-            A simulation of an astronaut's tablet interface during
-            an EVA after landing in Jezero Crater, near the
-            Perseverance rover:
-          </p>
 
           {" "}
 
