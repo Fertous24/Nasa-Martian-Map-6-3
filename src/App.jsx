@@ -105,7 +105,11 @@ export default function App() {
         </div>
       
         {" "}
-      
+
+
+          <p>
+            Try our 3d experience on Mars. Please click on the "mission" button in the top left to start the experience.
+          </p>
         <Link
           to="https://joavant.github.io/Mars_Simulation/"
           className="btn"
