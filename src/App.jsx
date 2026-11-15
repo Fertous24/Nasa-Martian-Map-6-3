@@ -20,8 +20,8 @@ export default function App() {
               problem. If an astronaut lands on Mars and needs to
               travel on foot, how can they safely reach a destination
               without having to communicate with Earth at every step?
-              We know that each question takes at least 5 minutes to
-              reach Earth, and the answer takes another 5 minutes
+              We know that each question takes at least 7 minutes to
+              reach Earth, and the answer takes another 7 minutes
               to arrive. It would be too long.
             </p>
           </div>
