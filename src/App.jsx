@@ -63,7 +63,7 @@ export default function App() {
           </p>
 
           <a
-            href="/eva/index.html"
+            href="/public/index.html"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline"
