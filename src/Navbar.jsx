@@ -14,8 +14,7 @@ export default function Navbar() {
         <Link to="/" className="logo" aria-label="Accueil">
         <img src="/logo.png" alt="Logo Mars" />
         <span className="logo-text">Team 5/3</span>
-        <Link to="/exploration-simulation">Exploration</Link>
-        </Link>
+=
 
         <nav>
           {sections.map((s) => (
