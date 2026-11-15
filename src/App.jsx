@@ -115,16 +115,16 @@ export default function App() {
               <strong>Ilann Diallo Bogreau</strong> – Developed the map and the app using JavaScript.
             </li>
             <li>
-              <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content.
+              <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content. Created and edited the demonstration video.
             </li>
             <li>
-              <strong>Marco BLANC</strong> – Created and edited the demonstration video.
+              <strong>Marco BLANC</strong> – 
             </li>
             <li>
               <strong>Joachim SERVANT</strong> – Created the 3D experience on mars with Unity.
             </li>
             <li>
-              <strong>Gabriel GUIMBARD-VILLA</strong> –
+              <strong>Gabriel GUIMBARD-VILLA</strong> – Wrote the team report.
             </li>
           </ul>
         </section>
