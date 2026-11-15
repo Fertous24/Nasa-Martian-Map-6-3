@@ -9,7 +9,7 @@ const features = [
   "360° exploration",
 ];
 
-function Home() {
+export default function App() {
   return (
     <>
       <Navbar />
