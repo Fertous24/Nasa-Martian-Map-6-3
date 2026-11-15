@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 
 const features = [
-  "An interactive map of the surface of Mars",
+  "Finding the safest path",
   "Simulation of Ilann and Jojo failing (impossible)",
-  "The localisation of the Earth in the Mars sky.",
-  "Exploration at 360°",
+  "Locating Earth in the Martian sky",
+  "360° exploration",
 ];
 
 function Home() {
@@ -18,15 +18,21 @@ function Home() {
         {/* HERO SECTION */}
         <section id="home" className="hero">
           <div className="hero-text">
-            <h1>Mars</h1>
+            <h1>Mars Local Map</h1>
             <p>
-              Voyagez jusqu'à la planète rouge, depuis votre navigateur.
+              Let's explore our solution to a safety and efficiency
+              problem. If an astronaut lands on Mars and needs to
+              travel on foot, how can they safely reach a destination
+              without having to communicate with Earth at every step?
+              We know that each question takes at least 5 minutes to
+              reach Earth, and the answer takes another 5 minutes
+              to arrive.
             </p>
           </div>
 
           <model-viewer
             src="/mars.glb"
-            alt="Modèle 3D de la planète Mars"
+            alt="3D model of Mars"
             auto-rotate
             rotation-per-second="15deg"
             interaction-prompt="none"
@@ -40,10 +46,25 @@ function Home() {
           <h2>Experience</h2>
 
           <p>
-            Posez le pied sur un sol rouillé, sous un ciel couleur de sable.
-            Explorez les plaines, les canyons et les volcans de Mars comme si
-            vous y étiez.
+            Our proposed solution is to allow astronauts to choose
+            the safest route themselves. We envision a lightweight
+            tablet that they can carry with them at all times.
+            During an EVA (Extravehicular Activity), they can take
+            it out and check how long it would take to reach a
+            destination, whether they have enough oxygen to make
+            the return journey safely, and access many other useful
+            features that can transform an exploration mission.
+            These features are demonstrated in our video.
           </p>
+
+          <a
+            href="/eva/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+          >
+            Open in full screen
+          </a>
 
           <div className="eva-wrapper">
             <iframe
@@ -56,18 +77,10 @@ function Home() {
           </div>
 
           <p className="map-text">
-            Simulation d'une sortie extravéhiculaire dans le cratère Jezero :
-            itinéraire A*, oxygène, énergie, radiation et sécurité de retour.
+            A simulation of an astronaut's tablet interface during
+            an EVA after landing in Jezero Crater, near the
+            Perseverance rover:
           </p>
-
-          <a
-            href="/eva/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline"
-          >
-            Ouvrir en plein écran
-          </a>
 
           {" "}
 
@@ -75,16 +88,20 @@ function Home() {
             to="/exploration-simulation"
             className="btn"
           >
-            Exploration simulation
+            Exploration Simulation
           </Link>
         </section>
 
         {/* VIDEO SECTION */}
         <section id="video">
           <h2>Demonstration Video</h2>
+          <p>
+            This is our demonstration video, showing how to use
+            our app and exploring all of its features:
+          </p>
 
           <div className="video">
-            <span>Votre vidéo ici</span>
+            <span>Your video here</span>
           </div>
         </section>
 
@@ -99,18 +116,36 @@ function Home() {
           </ul>
         </section>
 
+
         {/* AUTHOR SECTION */}
         <section id="author">
-          <h2>Author</h2>
-
+          <h2>Authors</h2>
+        
           <p>
-            Créé par les GOAT, passionnés d'espace et d'exploration
-            (et pour l'argent) martienne.
+            Created by a team of passionate high school students
+            during their free weekends.
           </p>
+        
+          <ul className="author-list">
+            <li>
+              <strong>Ilann Diallo Bogreau</strong> – Developed the map and the app using JavaScript.
+            </li>
+            <li>
+              <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content.
+            </li>
+            <li>
+              <strong>Marco BLANC</strong> – Created and edited the demonstration video.
+            </li>
+            <li>
+              <strong>Joachim SERVANT</strong> –
+            </li>
+            <li>
+              <strong>Gabriel GUIMBAR</strong> –
+            </li>
+          </ul>
         </section>
+
       </main>
     </>
   );
 }
-
-export default Home;
