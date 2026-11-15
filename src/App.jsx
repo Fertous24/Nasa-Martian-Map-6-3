@@ -37,7 +37,7 @@ export default function App() {
           ></model-viewer>
         </section>
 
-        <section id="Experience">
+        <section id="experience">
           <h2>Solution</h2>
 
           <p>
