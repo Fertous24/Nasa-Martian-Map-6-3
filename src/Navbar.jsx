@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'; // Assuming react-router-dom for Link
 export default function Navbar() {
   // Define sections for the map to work
   const sections = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'experience', label: 'Experience' },
+    { id: 'video', label: 'Demonstration video' },
+    { id: 'documentation', label: 'Documentation' },
+    { id: 'authors', label: 'Authors' }
   ];
 
   return (
