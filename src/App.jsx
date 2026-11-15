@@ -44,8 +44,8 @@ export default function App() {
           ></model-viewer>
         </section>
 
-        <section id="Solution">
-          <h2>Experience</h2>
+        <section id="Experience">
+          <h2>Solution</h2>
 
           <p>
             Our proposed solution is to allow astronauts to choose
