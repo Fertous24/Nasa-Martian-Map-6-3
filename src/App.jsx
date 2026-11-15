@@ -50,7 +50,7 @@ export default function App() {
               controls 
               width="100%"
             >
-              Votre navigateur ne supporte pas la lecture de vidéos.
+              if it doesn't work : https://youtu.be/VhGfkofmhdQ
             </video>
           </div>
         </section>
