@@ -63,7 +63,7 @@ export default function App() {
           </p>
 
           <a
-            href="/public/index.html"
+            href="/index1.html"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline"
@@ -73,7 +73,7 @@ export default function App() {
 
           <div className="eva-wrapper">
             <iframe
-              src="Public/index.html"
+              src="/index1.html"
               title="Jezero EVA Navigator"
               className="eva-frame"
               loading="lazy"
