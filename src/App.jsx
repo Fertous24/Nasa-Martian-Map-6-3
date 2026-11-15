@@ -71,8 +71,7 @@ export default function App() {
         </p>
         <p className="map-text">
           A simulation of an astronaut's tablet interface during
-          an EVA after landing in Jezero Crater, near the
-          Perseverance rover:
+          an EVA after landing in Jezero Crater, or in the Gale crater :
         </p>
       
         <div className="btn-group">
