@@ -116,10 +116,7 @@ export default function App() {
           <h2>Documentation</h2>
 
           <p>
-            Retrouvez notre rapport complet : le contexte du défi,
-            notre méthodologie, les choix techniques et les résultats
-            de notre solution. Vous pouvez le télécharger au format PDF
-            pour le consulter hors ligne.
+            Download our documentation to explore our project, its architecture, the models used, and its sources.
           </p>
 
           <div className="doc-card">
@@ -162,7 +159,7 @@ export default function App() {
               <strong>Joachim SERVANT</strong> – Created the 3D experience on mars with Unity.
             </li>
             <li>
-              <strong>Gabriel GUIMBARD-VILLA</strong> – Wrote the team report, all the documentation and helped creating the video.
+              <strong>Gabriel GUIMBARD-VILLA</strong> – Wrote the team report, all the documentation and created the presentation video.
             </li>
           </ul>
         </section>
