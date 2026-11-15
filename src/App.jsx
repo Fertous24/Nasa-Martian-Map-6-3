@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
 import Navbar from "./Navbar.jsx";
 
 const features = [
@@ -11,21 +9,6 @@ const features = [
   "Exploration at 360°",
 ];
 
-export default function App() {
-  const mapRef = useRef(null);
-
-  useEffect(() => {
-    if (!mapRef.current) return;
-
-    const map = L.map(mapRef.current).setView([0, 0], 2);
-
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OpenStreetMap",
-    }).addTo(map);
-
-    // Nettoyage : indispensable quand on change de page puis qu'on revient
-    return () => map.remove();
-  }, []);
 
   return (
     <>
@@ -57,10 +40,29 @@ export default function App() {
             vous y étiez.
           </p>
 
-          <div ref={mapRef} className="map"></div>
+          <div className="eva-wrapper">
+            <iframe
+              src="/eva/index.html"
+              title="Jezero EVA Navigator"
+              className="eva-frame"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
 
-          <p className="map-text">[PARAGRAPHE A INSERER]</p>
+          <p className="map-text">
+            Simulation d'une sortie extravéhiculaire dans le cratère Jezero :
+            itinéraire A*, oxygène, énergie, radiation et sécurité de retour.
+          </p>
 
+          <a
+            href="/eva/index.html"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline"
+          >
+            Ouvrir en plein écran
+          </a>{" "}
           <Link to="/exploration-simulation" className="btn">
             Exploration simulation
           </Link>
