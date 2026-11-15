@@ -46,11 +46,11 @@ export default function App() {
 
           <div className="video">
             <video 
-              src="/videos/pres.mp4" 
+              src="/videos/prese.mp4" 
               controls 
               width="100%"
             >
-              if it doesn't work : https://youtu.be/VhGfkofmhdQ
+              if it doesn't work : https://youtu.be/_7F4tzGqkKE
             </video>
           </div>
         </section>
@@ -106,7 +106,7 @@ export default function App() {
       
         {" "}
 
-        <h1>Try our 3D experience on Mars.<\h1>
+        <h2>Try our 3D experience on Mars.<\h2>
       
 
         <Link
