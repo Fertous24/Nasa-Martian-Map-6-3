@@ -161,7 +161,7 @@ export default function App() {
               <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content. Integrated and connected everyone's work.
             </li>
             <li>
-              <strong>Marco BLANC</strong> – Made the team icon with AI and watch a soccer match !
+              <strong>Marco BLANC</strong> – Created the graphic design of the website ( Icon and the flag, with SI )
             </li>
             <li>
               <strong>Joachim SERVANT</strong> – Created the 3D experience on mars with Unity.
