@@ -41,8 +41,7 @@ export default function App() {
         <section id="video">
           <h2>Demonstration Video</h2>
           <p>
-            This is our demonstration video, showing how to use
-            our app and exploring all of its features:
+            This is our demonstration video, an overview of the project.
           </p>
 
           <div className="video">
