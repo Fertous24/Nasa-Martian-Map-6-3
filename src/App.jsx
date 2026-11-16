@@ -171,19 +171,19 @@ export default function App() {
         
           <ul className="author-list">
             <li>
-              <strong>Ilann Diallo Bogreau</strong> – Developed the map and the app using JavaScript.
+              <strong>Ilann</strong> – Developed the map and the app using JavaScript.
             </li>
             <li>
-              <strong>Kévin Nguyen Trong BUI</strong> – Designed the website and wrote all its content. Integrated and connected everyone's work.
+              <strong>Kévin</strong> – Designed the website and wrote all its content. Integrated and connected everyone's work.
             </li>
             <li>
-              <strong>Marco BLANC</strong> – Created the graphic design of the website ( Icon and the flag, with SI )
+              <strong>Marco</strong> – Created the graphic design of the website ( Icon and the flag, with SI )
             </li>
             <li>
-              <strong>Joachim SERVANT</strong> – Created the 3D experience on mars with Unity.
+              <strong>Joachim</strong> – Created the 3D experience on mars with Unity.
             </li>
             <li>
-              <strong>Gabriel GUIMBARD-VILLA</strong> – Wrote the team report, all the documentation and created the presentation video.
+              <strong>Gabriel</strong> – Wrote the team report, all the documentation and created the presentation video.
             </li>
           </ul>
         </section>
